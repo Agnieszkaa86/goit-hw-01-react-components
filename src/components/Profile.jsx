@@ -13,7 +13,7 @@ const Container = styled.div`
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;np
   padding: 34px 8px;
 `;
 const Avatar = styled.img`
