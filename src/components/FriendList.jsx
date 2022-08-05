@@ -15,7 +15,7 @@ const List = styled.ul`
 const Item = styled.li`
   display: flex;
   align-items: center;
-  width: 400px;
+  width: 300px;
   margin: 5px 0;
   padding: 15px 25px;
   border-radius: 5px;
@@ -37,9 +37,8 @@ const Avatar = styled.img`
 const Name = styled.p`
   font-weight: bold;
   font-size: 30px;
-
-
 `;
+
 function FriendList(props) {
   const friends = props.friends;
   const view = friends.map(friend => (
