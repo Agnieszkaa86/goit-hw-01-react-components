@@ -32,7 +32,7 @@ const Avatar = styled.img`
   height: 50px;
   width: 50px;
   border-radius: 5px;
-  margin: 0 20px ;
+  margin: 0 20px;
 `;
 const Name = styled.p`
   font-weight: bold;

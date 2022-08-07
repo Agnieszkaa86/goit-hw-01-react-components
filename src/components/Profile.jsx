@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -29,7 +28,7 @@ const Name = styled.p`
   margin-top: 24px;
 `;
 const Tag = styled.p`
-color: #888888;
+  color: #888888;
   margin: 0;
   padding: 0;
   margin-bottom: 12px;
@@ -71,40 +70,39 @@ const Quantity = styled.span`
 `;
 
 function Profile(props) {
-    const { username, tag, location, avatar, stats } = props;
- return (
-      <Container>
-        <Description>
-          <Avatar src={avatar} alt="User avatar" />
-          <Name>{username}</Name>
-          <Tag>@{tag}</Tag>
-          <Location>{location}</Location>
-        </Description>
+  const { username, tag, location, avatar, stats } = props;
+  return (
+    <Container>
+      <Description>
+        <Avatar src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
-        <List>
-          <Item>
-            <Label>Followers</Label>
-                    <Quantity>{stats.followers}</Quantity>
-          </Item>
-          <Item>
-            <Label>Views</Label>
-                    <Quantity>{stats.views}</Quantity>
-          </Item>
-          <Item>
-            <Label>Likes</Label>
-                    <Quantity>{stats.likes}</Quantity>
-          </Item>
-        </List>
-      </Container>
-    );  
+      <List>
+        <Item>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </Item>
+        <Item>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </Item>
+        <Item>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </Item>
+      </List>
+    </Container>
+  );
 }
-   
+
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats : PropTypes.object.isRequired,
+  stats: PropTypes.object.isRequired,
 };
 export default Profile;
-
