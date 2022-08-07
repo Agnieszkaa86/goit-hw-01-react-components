@@ -33,7 +33,7 @@ import PropTypes from 'prop-types';
 // `;
 
 function TransactionHistory(props) {
-  const { history } = props;
+  const {history} = props;
   return (
     <div>
       <table>
